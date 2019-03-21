@@ -1,0 +1,78 @@
+{  
+    "name": "iMusic",
+    "manifest_version": 2,
+    "version": "1.0",
+    "browser_action": {
+        "default_popup": "./src/index.html",
+        "default_icon": "./assets/whoami.jpg"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [  
+        {  
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "css": [
+                "./lib/font-awesome/font-awesome.min.css",
+                "./lib/APlayer/APlayer.min.css",
+                "./music/music.css"
+            ],
+            "js": [
+                "./lib/jquery/jquery-3.2.1.min.js",
+                "./lib/plugin/drag.js",
+                "./lib/APlayer/APlayer.min.js",
+                "./music/music.min.js",
+                "./src/myscript.js",
+                "./music/songs/250819.js",
+                "./music/songs/000001.js",
+                "./music/songs/250819.js",
+                "./music/songs/837456.js",
+                "./music/songs/2535961.js",
+                "./music/songs/2783240.js",
+                "./music/songs/2892108.js",
+                "./music/songs/3309010.js",
+                "./music/songs/3696034.js",
+                "./music/songs/4046727.js",
+                "./music/songs/4142084.js",
+                "./music/songs/4378013.js",
+                "./music/songs/4535425.js",
+                "./music/songs/4738348.js",
+                "./music/songs/4803006.js",
+                "./music/songs/5022737.js",
+                "./music/songs/5874646.js",
+                "./music/songs/6180953.js",
+                "./music/songs/7993654.js",
+                "./music/songs/8827357.js",
+                "./music/songs/9441723.js",
+                "./music/songs/9601878.js",
+                "./music/songs/11888389.js",
+                "./music/songs/22974634.js",
+                "./music/songs/23169019.js",
+                "./music/songs/24716501.js",
+                "./music/songs/26434035.js",
+                "./music/songs/32040661.js",
+                "./music/songs/33969334.js",
+                "./music/songs/34794933.js",
+                "./music/songs/37426351.js",
+                "./music/songs/49242031.js",
+                "./music/songs/53833481.js",
+                "./music/songs/63733309.js",
+                "./music/songs/71623818.js",
+                "./music/songs/80535405.js",
+                "./music/songs/85731479.js",
+                "./music/songs/100845865.js",
+                "./music/songs/105065085.js",
+                "./music/songs/130902948.js",
+                "./music/songs/148561936.js",
+                "./music/songs/167897049.js",
+                "./music/songs/362197741.js",
+                "./music/songs/377030704.js",
+                "./music/songs/377712670.js",
+                "./music/songs/396359016.js"
+            ],
+            "run_at": "document_end"
+        }  
+    ]
+}
+  
